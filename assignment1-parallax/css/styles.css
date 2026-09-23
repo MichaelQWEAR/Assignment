@@ -62,3 +62,8 @@ footer a {
   background-color: black;;
   color: lightgray;
 }
+
+p {
+  width: 70%;
+  margin: 0 auto;
+}
