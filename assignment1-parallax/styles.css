@@ -1,0 +1,64 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg1 {
+  background-image: url("images/origin.jpg");
+}
+
+.bg2 {
+  background-image: url("images/hypercard.jpg");
+}
+
+.bg3 {
+  background-image: url("images/web.jpg");
+}
+
+.bg4 {
+  background-image: url("images/today.jpg");
+}
+
+.caption {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.caption:hover {
+  transform: scale(1.1);
+  color: gold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: gray;
+  background: black;
+}
+
+footer a {
+  color: lightgray;
+}
+
+.content {
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: black;;
+  color: lightgray;
+}

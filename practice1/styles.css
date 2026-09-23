@@ -1,0 +1,17 @@
+.card {
+  background-color: #f0e6d2;
+  padding: 20px;
+  border: 2px solid #a3866f;
+  margin: 15px;
+}
+
+#special {
+  background-color: #d6cd28;
+  border: 2px solid #8a7a00;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}

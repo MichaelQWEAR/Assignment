@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  background: #faf7f4;
+}
+
+.parallax {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.hero {
+  background-image: url("images/clouds.jpg");
+}
+
+.flowers {
+  background-image: url("images/flowers.jpg");
+}
+
+.content {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 60px;
+  background: #fffaf8;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.75);
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(6px);
+
+  max-width: 500px;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
