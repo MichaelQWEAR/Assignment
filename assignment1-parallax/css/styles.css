@@ -16,19 +16,19 @@ html {
 }
 
 .bg1 {
-  background-image: url("images/origin.jpg");
+  background-image: url("../images/origin.jpg");
 }
 
 .bg2 {
-  background-image: url("images/hypercard.jpg");
+  background-image: url("../images/hypercard.jpg");
 }
 
 .bg3 {
-  background-image: url("images/web.jpg");
+  background-image: url("../images/web.jpg");
 }
 
 .bg4 {
-  background-image: url("images/today.jpg");
+  background-image: url("../images/today.jpg");
 }
 
 .caption {
