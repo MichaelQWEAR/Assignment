@@ -2,12 +2,16 @@ let lightsOn = true;
 
 document.getElementById("lightBtn").addEventListener("click", function () {
   if (lightsOn) {
-    document.body.style.backgroundColor = "#000000";
+    document.body.style.backgroundColor = "#202020";
     document.body.style.color = "#f3f3f3";
+    document.getElementById("cube").style.backgroundColor = "#f3f3f3";
+    document.getElementById("box").style.borderColor = "#f3f3f3";
     document.getElementById("lightBtn").innerHTML = "Lights on";
   } else {
     document.body.style.backgroundColor = "#f3f3f3";
-    document.body.style.color = "#000000";
+    document.body.style.color = "#202020";
+    document.getElementById("cube").style.backgroundColor = "#202020";
+    document.getElementById("box").style.borderColor = "#202020";
     document.getElementById("lightBtn").innerHTML = "Lights off";
   }
   lightsOn = !lightsOn;
@@ -30,7 +34,7 @@ function updateClock() {
   document.getElementById("time").innerHTML = now.toLocaleTimeString();
 }
 
-updateClock();//initialize
+updateClock();
 setInterval(updateClock, 1000);
 
 let x = 0;
@@ -61,4 +65,25 @@ document.addEventListener("keydown", function (event) {
   y = Math.max(0, Math.min(y, 260));
 
   moveCube();
+});
+
+document.addEventListener("mousemove", function (event) {
+  let red = Math.round(event.clientX / window.innerWidth * 255);
+  let blue = Math.round(event.clientY / window.innerHeight * 255);
+
+  document.getElementById("box").style.backgroundColor =
+    "rgb(" + red + ", 180, " + blue + ")";
+
+  document.getElementById("mouseInfo").innerHTML =
+    "Mouse: x " + event.clientX + ", y " + event.clientY;
+});
+
+document.getElementById("resetBtn").addEventListener("click", function () {
+  let answer = confirm("Reset the square back to the start?");
+
+  if (answer) {
+    x = 0;
+    y = 0;
+    moveCube();
+  }
 });
